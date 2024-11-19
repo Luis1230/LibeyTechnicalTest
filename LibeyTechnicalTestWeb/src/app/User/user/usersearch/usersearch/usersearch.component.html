@@ -1,0 +1,31 @@
+<div class="row mt-3" style="margin: 5rem 10rem 0 10rem; height: 70em; padding-top: 3rem; padding-bottom: 5rem;background-color:#edf2f6;border-radius: 10px;">
+	<div class="col-lg-12 col-md-12">
+       <div>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" [(ngModel)]="numeroDocumento" name="numDocumento" type="text" placeholder="Ingresa número de documento " aria-label="Search">
+            <button class="btn btn-outline-success" (click)="searchUsers()">Buscar</button>
+          </form>        
+      </div>
+      <br>
+      <div>
+        <table class="table table-hover">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">Número Documento</th>
+                <th scope="col">Nombres y Apellidos</th>
+                <th scope="col">Dirección</th>
+                <th scope="col">Celular</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of userLst">
+                <th scope="row">{{ item.documentNumber }}</th>
+                <td>{{ item.name }} {{ item.fathersLastName }} {{ item.mothersLastName }} </td>
+                <td>{{ item.address }} </td>
+                <td>{{ item.phone }} </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+	</div>
+</div>

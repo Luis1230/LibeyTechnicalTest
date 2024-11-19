@@ -1,0 +1,54 @@
+# .NET build directories
+bin/
+obj/
+
+# User-specific files
+.vs/
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs
+*.log
+
+# npm
+node_modules/
+
+# Angular build output
+/dist/
+/coverage/
+
+# Angular and TypeScript configuration
+.angular/
+tsconfig.json
+tsconfig.*.json
+tslint.json
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Microsoft Visual Studio for Mac
+.vs/
+
+# Azure
+.local/
+
+# JetBrains Rider
+.idea/
+
+# ASP.NET specific
+appsettings.Development.json
+appsettings.Production.json
+appsettings.json
+
+# Other files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
